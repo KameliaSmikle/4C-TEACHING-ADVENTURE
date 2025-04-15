@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4C Teaching Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>4C Teaching Adventure</h1>
+        <p id="instruction">Welcome to the 4C journey! Choose how you will solve the challenges of teaching Communication, Collaboration, Critical Thinking, and Creativity.</p>
+        <div id="game-content">
+            <h2 id="level-title">Communication Challenge</h2>
+            <p id="game-question">Your students are struggling to understand a concept. How will you explain it?</p>
+            <div class="choices">
+                <button class="choice" onclick="makeChoice('A')">Use lots of text on PowerPoint slides</button>
+                <button class="choice" onclick="makeChoice('B')">Use visual aids and relatable examples</button>
+                <button class="choice" onclick="makeChoice('C')">Give a lengthy technical explanation</button>
+            </div>
+            <div id="feedback" class="feedback"></div>
+            <button id="next-btn" class="hidden" onclick="nextLevel()">Next Challenge</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
